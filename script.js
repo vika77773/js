@@ -1,138 +1,168 @@
-﻿// hfusdhfyhseufhshfudsuhf
-/*jsdhjahdfjhsfj*/
-console.log('text');
+let h1=document.querySelector('h1');
+console.log(h1);
 
-let myVar1;
+let p1=document.querySelector('p');
+console.log(p1);
 
-myVar1-15;
+let p2=document.querySelector('.text1');
+console.log(p2);
 
-console.log(myVar1);
+let p3=document.querySelector('.text2');
+console.log(p3);
 
-console.log('возраст:',myVar1);
+let p4=document.querySelector('.num');
+console.log(p4);
 
-let myName='Вика';
-let myVar2=true;
+let input=document.querySelector('#i1');
+console.log(input.value);
 
-myVar2=false;
-console.log(myName);
-console.log(myVar2);
+let div=document.querySelector('#list');
+console.log(div);
 
-console.log(2==2);
+let button=document.querySelector('#start1');
 
-let n=15;
-//n=n+3;
-n+=3;
-console.log(n);
-//n=n-6;
-n-=6;
-console.log(n);
-//n=n/3;
-n/=3;
-console.log(n);
-//n=n+1;
-n++;
-console.log(n);
-//n=n-1;
-n--;
-console.log(n);
+let button2=document.querySelector('#start2');
 
-console.log('Сидим дома ' +n+ ' недели');
+let button3=document.querySelector('#start3');
 
-let myStr='моя строка или текст';
+let button4=document.querySelector('#start4');
 
-console.log(myStr.length);
+let button5=document.querySelector('#start5');
 
-console.log(myStr.toLocaleUpperCase());
+let a=document.querySelector('a');
 
-console.log(myStr.toLocaleUpperCase());
+let button6=document.querySelector('#cancel');
+
+let img=document.querySelector('.img1');
+
+let img2=document.querySelector('.img2');
+
+let input2=document.querySelector('#i2');
+console.log(input2.value);
+
+let input3=document.querySelector('#i3');
+console.log(input3.value);
 
 
-//12.04.2020
-
-let question = confirm('Ты учишься?');
-console.log(typeof question);
-
-let question2 = prompt('Сколько тебе лет?');
-console.log(question2);
-
-let question3 = +prompt('Сколько у тебя уроков?' , 6);
-console.log(question3);
-
-let e='33';
-let f=1;
-e=Number(e);
-console.log(Number (e));
-console.log(e+f);
-
-let question4= +prompt('Введите число' , 7);
-if( question4 === 7){ console.log('Вы вели число 7');
-
-}
-else{
-console.log('Вы вели другое число');
-}
+let input4=document.querySelector('#i4');
+console.log(input4.value);
 
 
+let input5=document.querySelector('#i5');
+console.log(input5.value);
 
 
-console.log('Вы вели число 7');
+let input6=document.querySelector('#i6');
+console.log(input6.value);
 
 
-// задача 1
-let money;
-console.log(money);
+let input7=document.querySelector('#i7');
+console.log(input7.value);
 
- money=+prompt('Ваш месячный доход?' , 30000);
+console.log(img.src);
 
-let addExpenses;
-console.log(addExpenses);
+div.innerHTML='<h2> поменяли </h2>';
+h1.innerHTML='текст';
 
-addExpenses=+prompt('Перечислите расходы за рассчитываемый период' , 'такси, еда,одежда...');
+button.addEventListener('click', function(){
+    h1.innerHTML='Я ничего не знаю';
+});
 
-let deposit;
-console.log(deposit);
+/*button2.addEventListener('click', function(){
+    let a2=+input.value; let b=+input2.value;
+input3.value=a2+b;
+}); */
 
-deposit=confirm('Есть ли у вас депозит в банке?');
+button6.addEventListener('click', function(){
+input.value=''; input2.value=''; input3.value='';
+});
 
-let expenses1;
-let expenses2;
-let amount1;
-let amount2;
+//задача 1
 
-expenses1=prompt('Введите обязательную статью расходов?');
-console.log(expenses1);
-expenses2=prompt('Введите обязательную статью расходов?');
-console.log(expenses2);
+button2.addEventListener('click',function(){
+input.value='привет';
+});
 
-amount1=prompt('Во сколько это обойдётся?');
-console.log(amount1);
-amount2=prompt('Во сколько это обойдётся?');
-console.log(amount2);
-
-let budgetMonth;
-console.log(budgetMonth);
-budgetMonth=money-amount1-amount2;
-
-let mission;
-console.log(mission);
-budgetMonth=mission/budgetMonth;
-
-let budgetDay;
-console.log(budgetDay);
-budgetDay=budgetMonth/30;
-
-if(budgetDay > 1200){console.log('У вас высокий уровень дохода');}
-else 
-if(budgetDay > 600 && budgetDay< 1200){console.log('У вас средний уровень дохода');} 
-else
-if(budgetDay < 600){console.log('К сожелению, ваш уровень дохода ниже среднего');}
-else
-if(budgetDay < 0){console.log('Что-то пошло не так');}
-
- 
+button.addEventListener('click',function(){
+    input2.value='пока';
+    });
 
 
 
+
+//задача 2
+
+button3.addEventListener('click', function(){
+let num3=num.innerHTML;
+console.log(num3);
+num3++
+
+});
+
+
+
+//задача 3
+
+button4.addEventListener('click', function(){
+    div.innerHTML='<i> hello </i>';
+});
+
+//задача 4
+
+button5.addEventListener('click', function(){
+    input2.value=a;
+});
+
+
+//задача 5
+
+button4.addEventListener('click', function(){
+ let ass=img1.src;
+ text1.innerHTML=ass;
+});
+
+//задача 6
+let t=img.width;
+
+button5.addEventListener('click', function(){
+img.width=300;
+});
+
+
+
+//задача 7
+let d=img.width;
+
+button2.addEventListener('click', function(){
+let h=img.width*2;
+
+});
+
+
+//задача 8
+
+let as1=img.src;
+let as2=img2.src
+button3.addEventListener('click', function(){
+img.src=as2;
+img2.src=as1;
+});
+
+//задача 9
+
+button.addEventListener('click', function(){
+
+});
+
+
+
+//задача 10
+
+button2.addEventListener('click', function(){
+let c1=+input.value; let c2=+input2.value; let c3=+input3; let c4=+input4;
+let c5=+input5;
+let c6=input6.value =(ruka1+ruka2+ruka3+ruka4+ruka5)/5;
+});
 
 
 
